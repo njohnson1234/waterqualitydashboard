@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Merced Water Quality Dashboard</title>
+        <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    </head>
+    <body>
+
+        <!-- *******Sidebar******** -->
+
+       <div class="sidebar">
+        <h2>Learn More!</h2>
+        <ul class="menu">
+            <li>
+                <a href="https://experience.arcgis.com/experience/a8e39c18f17541668e635c4be46768a5">
+                    <i class ="fas fa-tachometer-alt"></i>
+                    <span>NPS Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.merced-river.org/">
+                    <i class="fa-solid fa-water"></i>
+                    <span>Upper Merced River Watershed Council</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.nps.gov/yose/learn/nature/mercedriverrestoration.htm">
+                    <i class="fa-regular fa-chart-bar"></i>
+                    <span>Merced River Project</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.yosemite.com/plan-your-trip/yosemite-webcams/">
+                    <i class="fa-solid fa-camera"></i>
+                    <span>Yosemite Webcams</span>
+                </a>
+            </li>
+        </ul>
+       </div>
+
+       <!-- ******  Header ******* -->
+
+       <div class="main--content">
+        <div class="header--wrapper">
+            <div class="header--title">
+               <span>NatureBridge Yosemite</span>
+               <h2>Water Quality Dashboard</h2>
+            </div>
+            <div class="logo--header">
+               <img src="nblogo.png" width="250" height="50" alt="">
+               <img src="umrwclogo.jpeg" width="100" height="75" alt="">
+            </div>
+           </div>
+
+         <!-- *******Video Tour ****** -->
+
+         <div class="video--wrapper">
+            <div class="video">
+                <video id="sites" width="100%" height="auto" loop autoplay muted>
+                    <source src="0001-0480.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video>
+            </div>
+            <div class="video--overlay">
+               <h1>Discover the Merced</h1>
+               <h6>Yosemite Valley, California</h6>
+            </div>
+            <div class="welcome--message--wrapper">
+                <h2>Check Health Report</h2>
+                <i class="fa-solid fa-arrow-down-long"></i>
+                <!-- <p>Flowing 122 miles from the Yosemite wilderness to the inlet of Lake McClure, the Merced Wild and Scenic River and its watershed encompass some of the most unique landscapes in the Sierra Nevada. Learn more about how we can protect it and monitor its health.</p> -->
+            </div>
+           </div>
+
+            <!-- ***** Webcams ******** -->
+        <div class="webcam">
+            <!-- <div class="webcam--wrapper"> -->
+                <div class="webcam--header">
+                   <h1>Yosemite Today!</h1>
+                   <h3>Updated Webcam Footage</h3>
+                </div>
+                <div class="webcam--links">
+                    <img src="	https://s3.us-west-2.amazonaws.com/public.pixelcaster.com/snapshots/yosemite-yosfalls/latest.jpg" width="100%" height="250" alt="">
+                    <img src="https://s3.us-west-2.amazonaws.com/public.pixelcaster.com/snapshots/yosemite-halfdome/latest.jpg" width="100%" height="250" alt="">
+                </div>
+                <script>
+                    (function(d, s, id) {
+                        if (d.getElementById(id)) {
+                            if (window.__TOMORROW__) {
+                                window.__TOMORROW__.renderWidget();
+                            }
+                            return;
+                        }
+                        const fjs = d.getElementsByTagName(s)[0];
+                        const js = d.createElement(s);
+                        js.id = id;
+                        js.src = "https://www.tomorrow.io/v1/widget/sdk/sdk.bundle.min.js";
+            
+                        fjs.parentNode.insertBefore(js, fjs);
+                    })(document, 'script', 'tomorrow-sdk');
+                    </script>
+            
+                    <div class="tomorrow"
+                       data-location-id="129712"
+                       data-language="EN"
+                       data-unit-system="IMPERIAL"
+                       data-skin="light"
+                       data-widget-type="upcoming"
+                       style="padding-bottom:22px;position:relative;"
+                    >
+                      <a
+                        href="https://www.tomorrow.io/weather-api/"
+                        rel="nofollow noopener noreferrer"
+                        target="_blank"
+                        style="position: absolute; bottom: 0; transform: translateX(-50%); left: 50%;"
+                      >
+                        <img
+                          alt="Powered by the Tomorrow.io Weather API"
+                          src="https://weather-website-client.tomorrow.io/img/powered-by.svg"
+                          width="250"
+                          height="18"
+                        />
+                      </a>
+                    </div>
+            <!-- </div> -->
+        </div>
+
+        <!-- ****Merced Fun Facts********* -->
+        <div class="webcam">
+            <!-- <div class="webcam--wrapper"> -->
+                <div class="webcam--header">
+                   <h1>Merced At-A-Glance</h1>
+                   <!-- <h3>Updated Webcam Footage</h3> -->
+                </div>
+                <div class="facts--container">
+                    <div class="fact">
+                        <img src="vernal.jpg" alt="" height="300" width="auto">
+                        <h1>Merced River</h1>
+                        <h2>144 miles long</h2>
+                    </div>
+                    <div class="fact">
+                        <img src="merced_map.jpg" alt="" height="300" width="auto">
+                        <h1>Merced Watershed</h1>
+                        <h2>1726 Square Miles</h2>
+                    </div>
+                </div>
+                <div class="facts--container">
+                    <div class="fact">
+                        <i class="fa-solid fa-fish fa-5x"></i>
+                        <h1>37</h1>
+                        <h2>Fish Species</h2>
+                    </div>
+                    <div class="fact">
+                        <i class="fa-solid fa-dove fa-5x"></i>
+                        <h1>127</h1>
+                        <h2>Bird Species</h2>
+                    </div>
+                    <div class="fact">
+                        <i class="fa-solid fa-bug fa-5x"></i>
+                        <h1>140</h1>
+                        <h2>Insect Species</h2>
+                    </div>
+                </div>
+               
+            <!-- </div> -->
+        </div>
+          
+        <!-- ****** Sites ******** -->
+        <div class="testing--sites">
+            <h1>Explore Our Testing Sites</h1>
+            <h3>(Click for more Detail)</h3>
+           <div class="site--container">
+               <!-- <input id="ch" type="checkbox"> -->
+               <h2 class="main--title">Backpacker's Campground</h2>
+               <img src="merced river.jpg" alt="">
+
+               <div class="chart--container">
+                 <!-- <div class="charts"> -->
+                   <div class="ph">
+                       <div id='myChart' width="200"></div>
+                       <h2>pH</h2>
+                       <h3>Acidity Level</h3>
+                   </div>
+                   <div class="temperature">
+                       <div id='myChart2'></div>
+                       <h2>Temperature</h2>
+                       <h3>Degrees Celcius</h3>
+                   </div>
+                   <div class="dissolved--o2">
+                       <div id='myChart3'></div>
+                       <h2>Dissolved O2</h2>
+                       <h3>PPM</h3>
+                   </div>
+                  <!-- </div> -->
+               </div>
+               <button id="button--bp">Hide</button>
+               <!-- <label for="ch">Check Status</label> -->
+            </div>
+            <div class="site--container">
+               <!-- <input id="ch" type="checkbox"> -->
+               <h2 class="main--title">Superintendent's Bridge</h2>
+               <img src="super.jpg" alt="">
+               <!-- <button id="button">Check Status</button> -->
+               <!-- <label for="ch">Check Status</label> -->
+               <div class="chart--container">
+                   <div id='myChart'></div>
+                   <div id='myChart2'></div>
+                   <div id='myChart3'></div>
+               </div>
+            
+            </div>
+        </div>
+       </div>
+       <script src="gauge-chart.js"></script>
+       <script src="main.js"></script>
+       <script src="//code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    </body>
+</html>
+<!-- C:\Users\nbjoh\OneDrive\Coding\projects\index.html -->
